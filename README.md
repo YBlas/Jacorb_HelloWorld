@@ -11,13 +11,29 @@ Also download the library jboss-rmi-api_1.0_spec-1.0.6.Final.jar from the Maven 
 
 This is a workaround to fix an issue with Java 11 and above.
 
-Add all the libraries from the Jacorb lib folder to the project (they are not all required, but I don't know the minmum set) **AND** add the jboss library too.
+To run the demo:
 
-To stop Jacorb displaying extensive logging information add the following VM args to the HelloServer and HelloClient run configurations:
+1.  Add all the libraries from the Jacorb lib folder to the project (they are not all required, but I don't know the minmum set) **AND** add the jboss library too.
+
+2.  Precompile the idl.  To do this use the terminal built into Intellij (or an external terminal if you prefer) and type:
+
+
+    cd src
+    <path_to_jacorb_dir>/bin/idl HelloWorld.idl
+
+e.g. I would type:
+
+    cd src
+    /spare/jacorb-3.9/bin/idl HelloWorld.idl
+    
+3.  To stop Jacorb displaying extensive logging information add the following VM args to the HelloServer and HelloClient run configurations:
+
 
     -Djacorb.log.default.verbosity=2
     
 That will ensure errors and warnings are displayed, but not general info.  (You might try running the code without these arguments to see the extra logging information produced.  Setting the level to 4 gives even more detail.)
 
-Start the Server and then run the Client.  The server persists so has to be stopped externally.
+4.  Start the Server and then run the Client.  The server persists so has to be stopped externally.
+
+
 
