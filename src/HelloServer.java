@@ -11,7 +11,7 @@ class HelloImpl extends HelloPOA {
     
     // implement hello_world() method
     public String hello_world() {
-	return "\nHello world from Gary's machine!!\n";
+	return "\nHello world!!\n";
     }
 }
 
