@@ -1,4 +1,4 @@
-This is demo of the Corba Hello world program written to use the Jacorb Orb.  It uses the "IOR in a file" trick.
+##This is demo of the Corba Hello world program written to use the Jacorb Orb.  It uses the "IOR in a file" trick.##
 
 Dr Gary Allen.
 University of Huddersfield
