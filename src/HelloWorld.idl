@@ -10,5 +10,6 @@ module HelloWorld {
 	// This operation takes no parameters and returns a string.
 	//
 	string hello_world();
+	string send_back(in string one);
     };			
 };
